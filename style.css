@@ -1,0 +1,375 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ 
+    font-family: 'Gowun Dodum', sans-serif;
+    
+
+}
+:root{
+   
+    --primaryColor:#ffffff;
+    --secondaryColor:#f8efef;
+    --bg-color:#f1f1f1;
+    --btn-color:#428746;
+    --text-color:#707070;
+    --black:#010000;
+}
+html{
+    font-size: 62.5%;
+}
+
+.navbar{
+display: flex;
+align-items: center;
+justify-content: space-between;
+background-color: var(--primaryColor);
+padding: 1rem 6rem;
+position:fixed;
+width: 100%;
+
+}
+.logo a {
+    text-decoration: none;
+    font-size: 2rem;
+    color: var(--btn-color);
+    
+    
+}
+body{
+    background-color: black;
+}
+.logo a h1{
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+}
+h1{
+ color: #428746;   
+}
+.search {
+    width: 45rem;
+    display: flex;
+}
+.search input{
+    width: 100%;
+    padding: 01rem 4rem;
+    border: none;
+    outline: none;
+    border-radius: 0.5rem;
+    background-color: var(--bg-color);
+
+}
+
+.search i{
+    position: relative;
+    left: 2.1rem;
+    top: 0.9rem;
+    font-size: 1.6rem;
+    color: black;
+}
+.buttons {
+    display: flex;
+    gap: 1.6rem;
+}
+.buttons a {
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 600;
+    background-color:var(--btn-color);
+    color: var(--primaryColor);
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+.buttons a:hover{
+    color: var(--black);
+    transition: all 0.4s ease-in-out;
+}
+.humburger{
+display: none;
+}
+.humburger i{
+    font-size: 2.8rem;
+    cursor: pointer;
+    color: black;
+}
+.humburger i:hover{
+    color: white;
+}
+
+
+
+.hero-section{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+.postHead{
+    padding: 6rem 0rem;
+    font-size: 3.5rem;
+    color:var(--btn-color);
+    text-transform: uppercase;
+    text-align: center;
+}
+.post{
+    display: flex;
+    background-color: var(--primaryColor);
+    padding: 5rem;
+    margin-bottom: 3rem;
+}
+.right{
+    width: 65%;
+}
+.right a{
+    text-decoration: none;
+    color:var(--text-color);
+}
+.right h1 {
+    font-size: 3.4rem;
+    padding-bottom: 1rem;
+   
+}
+.right h1 a{
+    color: #428746;
+}
+.right p{
+    font-size: 1.7rem;
+    padding: 2rem;
+}
+.detail{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 2rem;
+    
+}
+.left{
+    background-image: url(./assets/ts.jpg);
+    width: 35%;
+    height: 25rem;
+    border-radius: 0.8rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.pic{
+    background-image: url(./assets/tailwend.png);
+    width: 35%;
+    height: 25rem;
+    border-radius: 0.8rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+} 
+
+.api{
+    background-image: url(./assets/api.jpg);
+    width: 35%;
+    height: 25rem;
+    border-radius: 0.8rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+} 
+
+
+
+
+
+
+
+
+/* for Tablet screen size */
+
+@media only screen and (max-width:1007px){
+    html{
+        font-size: 60%;
+    }
+    .logo a {
+        font-size: 1.8em;
+    }
+    .search {
+        width: 36rem;
+        display: flex;
+    }
+    .humburger{
+    display: block;
+    }
+    .humburger i{
+        font-size: 3.5rem;
+    }
+    .navbar{
+        gap: 1.5rem;
+    }
+    .buttons{
+        position: absolute;
+        top: 5.5rem;
+        right: 0rem;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        /* background-color: black; */
+        align-items: center;
+        padding: 2rem 0rem;
+        height: 40vh;
+        opacity: 100%;
+       
+    }
+    .menuShow{
+        opacity: 0;
+        
+    }
+
+    .buttons a{
+          background-color: none;
+          font-size: 1.8rem;
+    }
+
+    .postHead{
+        
+padding: 3rem 0rem;
+ font-size: 3rem;
+            color:var(--btn-color);
+    
+    }
+    .post{
+        display: flex;
+        flex-direction: column;
+        background-color: var(--primaryColor);
+        padding: 5rem;
+        margin-bottom: 3rem;
+        border-radius: 01rem;
+    }
+    .right{
+        width: 100%;
+    }
+    .left{
+        width: 100%;
+        height: 25rem;
+    }
+}
+
+
+/* for Mobile screen size */
+
+@media only screen and (max-width:640px){
+    .humburger{
+    display: block;
+    }
+    html{
+        font-size: 54%;
+    }
+    .humburger i{
+        font-size: 3.5rem;
+    }
+    .navbar{
+        gap: 1.5rem;
+        padding: 1rem 2.7rem;
+    }
+    .search {
+        width: 30rem;
+    }
+    .search input{
+        width: 100%;
+        padding: 01rem 2.7rem;
+        border: none;
+        outline: none;
+        border-radius: 0.5rem;
+    
+    }
+    .buttons{
+        position: absolute;
+        top: 5.5rem;
+        left: 0rem;
+        width: 100%;
+        /* display: flex; */
+        flex-direction: column;
+        /* background-color: black; */
+        align-items: center;
+        padding: 2rem 0rem;
+        height: 100vh;
+        opacity: 100%;
+    
+        
+    }
+    .menuShow{
+        opacity: 0;
+        z-index: -1;
+        
+        
+    }
+    .buttons a{
+          background-color: none;
+          font-size: 1.8rem;
+    }
+    .hero-section{
+        padding: 6rem 1rem;
+        /* z-index: -1;    */
+    }
+    .postHead{
+        padding: 3rem 0rem;
+        font-size: 3rem;
+        color:var(--btn-color);
+    }
+    .post{
+        display: flex;
+        flex-direction: column;
+        background-color: var(--primaryColor);
+        padding: 1.7rem 1.5rem;
+        border-radius: 01rem;
+        margin-bottom: 3rem;
+        
+    }
+    .right{
+        width: 100%;
+    }
+    .right h1 {
+        font-size: 3rem;
+        padding-bottom: 0.7rem;
+    }
+    .detail{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        padding: 1rem;
+        
+    }
+    .left{
+        width: 100%;
+        height: 20rem;
+    }
+
+
+    .footlist{
+        width: 50%;
+        font-size: 1.5rem;
+        padding: 3rem;
+        display: flex;
+        justify-content: center;
+    }
+    .footlist h1{
+        font-size: 2rem;
+    }
+    .socail{
+        width: 50%;
+        font-size: 1rem;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+    
+    }
+    
+    .socail h1{
+        font-size: 1.7rem;
+    }
+    .footul i{
+        font-size: 1.4rem;
+    }
+
+    .copyright {
+        font-size: 1.4rem;
+    }
+}
+

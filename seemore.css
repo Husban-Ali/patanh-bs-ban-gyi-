@@ -1,0 +1,352 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ 
+    font-family: 'Gowun Dodum', sans-serif;
+    
+
+}
+:root{
+   
+    --primaryColor:#ffffff;
+    --secondaryColor:#eff1f8;
+    --bg-color:#f1f1f1;
+    --btn-color:#428746;
+    --text-color:#707070;
+    --black:#010001;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    background-color: var(--black);
+}
+.navbar{
+display: flex;
+align-items: center;
+justify-content: space-between;
+background-color: var(--primaryColor);
+padding: 1rem 6rem;
+position: fixed;
+width: 100%;
+/* box-shadow: 0.1rem 0.1rem 0.1rem; */
+}
+.logo a {
+    text-decoration: none;
+    font-size: 2rem;
+    color: black;
+    
+    
+}
+.logo a h1{
+    font-family: 'Roboto', sans-serif;
+    color: var(--btn-color);
+    text-transform: uppercase;
+}
+
+.buttons {
+    display: flex;
+    gap: 1.6rem;
+}
+.buttons a {
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 600;
+    background-color: var(--btn-color);
+    color: var(--primaryColor);
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+.buttons a:hover{
+    color:var(--black);
+    transition: all 0.4s ease-in-out;
+}
+.humburger{
+display: none;
+}
+.humburger i{
+    font-size: 2.8rem;
+    cursor: pointer;
+    color:var(--btn-color);
+}
+.humburger i:hover{
+    color: black;
+}
+
+.hero-section{
+    display: flex;
+    justify-content: center;
+    padding: 7rem 15rem;
+}
+
+.post-section{
+    /* border: 0.2rem solid #FF0060;    */
+    border-radius: 1rem; 
+    padding: 3rem ;
+    background-color:var(--primaryColor);
+    
+    
+}
+.post-section div{
+    margin-bottom: 3rem;
+}
+.heading h1 {
+font-size: 4.5rem;
+margin: 3rem 0rem;
+color: var(--black);
+
+
+
+}
+.paragraph p{
+    font-size: 20px;
+    text-align: justify;
+    color: var(--text-color);
+
+}
+.images {
+
+    text-align: center;
+  
+    
+}
+.images img{
+    width: 80%;
+
+}
+.user-section{
+    display: flex;
+    width: 100%;
+    
+    justify-content: space-between;
+   
+    font-size: 1.8rem;
+}
+
+.reply-section{
+    width: 100%;
+    
+}
+.reply-section .head{
+    display: flex;
+    gap: 3rem;
+    font-size: 1.4rem;
+}
+.reply-section textarea{
+    width: 100%;
+    outline: none;
+    padding: 3rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: #d1d1d1;
+    margin-bottom: 2rem;
+}
+.reply-section button{
+    background-color:var(--btn-color);
+    color:black;
+    border: none;
+    outline: none;
+    padding: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+    border-radius: 0.7rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+}
+.reply-section button:hover{
+    background-color: black;
+    color: #FF0060;
+}
+.user-detail h2 {
+margin: 2rem 0rem;
+font-size: 1.7rem;
+}
+.image-name{
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+.users-name p{
+font-size: 1.5rem;
+font-weight: 600;
+}
+.user-image{
+    width: 5rem;
+}
+.user-image img{
+    border-radius: 50%;
+    width: 100%;
+}
+.comment p{
+font-size: 1.7rem;
+}
+.like i {
+    font-size: 1.9rem;
+    cursor: pointer;
+}
+.like i:hover{
+    color:rgb(255, 0, 0);
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:1100px){
+
+    .hero-section{
+        padding: 2.5rem;
+    }
+    .post-section{
+        width: 1005;
+    }
+
+}
+
+@media only screen and (max-width:1007px){
+
+    .hero-section{
+        padding: 2rem;
+    }
+    .post-section{
+        width: 1005;
+    }
+
+}
+
+
+
+
+
+
+@media only screen and (max-width:640px){
+    .humburger{
+    display: block;
+    }
+    html{
+        font-size: 54%;
+    }
+    .humburger i{
+        font-size: 3.5rem;
+    }
+    .navbar{
+        gap: 1.5rem;
+        padding: 1rem 2.7rem;
+    }
+   
+    .buttons{
+        position: absolute;
+        top: 5.2rem;
+        left: 0rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        align-items: center;
+        padding: 2rem 0rem;
+        height: 100vh;
+        opacity: 100%;
+    }
+    .menuShow{
+        opacity: 0;
+        z-index: -1;
+    }
+    .buttons a{
+          background-color: none;
+          font-size: 1.8rem;
+    }
+    .hero-section{
+        padding: 0.8rem;
+    }
+    .post-section{
+        width: 1005;
+    }
+    .heading h1{
+        font-size: 3rem;
+    }
+    .user-section{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+       
+        font-size: 1.8rem;
+    }
+}
+
+input{
+    height: 50px;
+    width: 100%;
+}
+
+/* Add these styles to your existing CSS file */
+
+/* Style for the container of each message */
+
+  /* Add these styles to your existing CSS file */
+
+/* Style for the container of each message */
+.message-container {
+    margin-bottom: 10px; /* Adjust spacing between messages */
+  }
+  
+  /* Style for the username */
+  .message-username {
+    font-weight: bold;
+    color: #428746; /* You can adjust the color as needed */
+  }
+  
+  /* Style for the message content */
+  .message-content {
+    margin-top: 5px; /* Adjust spacing between username and message content */
+    color: #333; /* Adjust message text color */
+  }
+  
+  /* Style for the timestamp */
+  .message-timestamp {
+    font-size: 12px; /* Adjust timestamp font size */
+    color: #707070; /* Adjust timestamp color */
+  }
+  
+  /* Style for the message input box */
+  #messageInput {
+    width: calc(100% - 100px); /* Adjust input box width */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  /* Style for the send message button */
+  #sendMessage {
+    width: 100px; /* Adjust button width */
+    padding: 10px;
+    background-color: #1c8622; /* Adjust button background color */
+    color: #eeecec; /* Adjust button text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Style for the messages container */
+  #messagesContainer {
+    max-height: 300px; /* Adjust maximum height of the messages container */
+    overflow-y: auto; /* Enable vertical scrollbar if messages overflow */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+  }
+
+  #messagesContainer strong{
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+  #messagesContainer p{
+    font-size: 15px
+    ;
+  }

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY Blog</title>
+    <link rel="icon" type="image/png" href="./assets/OIP (1).jpeg">
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="logo"><a href="./index.html"><h1>Husban</h1></a></div>
+            <div class="search"><i class="fa-solid fa-magnifying-glass"></i><input type="text" placeholder="Search Blog OR Query"></div>
+            <div class="buttons " id="buttons"><a href="./ask.html" id="writeBtn"><i class="fa-solid fa-pen-to-square"></i> Write </a>
+            <div class="buttons " id="buttons"><a href="./final.html" >Question</a>
+            <div class="buttons " id="buttons"><a href="./login.html" id="loginBtn"> Login </a>
+                <div class="buttons" id="logoutBtnContainer" style="display:none;"><a href="#" id="logoutBtn"> Logout </a></div>
+            </div>
+             <div class="humburger" id="humburger">
+                <i class="fa-solid fa-bars"></i>
+             </div>
+        </div>
+        </div>
+    </nav>
+
+    <div class="hero-section">
+        <h1 class="postHead">Articles</h1>
+        <div class="post">
+            <div class="right">
+                <h1><a href="./seemore.html">Tailwind CSS</a></h1>
+                <p><a href="./seemore.html">Hey there and welcome to another blog. Today, we're diving into the world of Tailwind CSS - a powerful utility-first CSS framework that is perfect for beginners looking to streamline their web development process.If you're new to Tailwind CSS, you're in for a treat! This framework allows you to build stunning websites with minimal effort Read More...</a></p>
+                    <div class="detail">
+                        <p><i class="fa-solid fa-user"></i>Husban</p>
+                    </div>
+            </div> 
+            <div class="pic"><a href="./assets/tailwend.png"></a></div>
+        </div>
+        <div class="post">
+            <div class="right">
+                <h1><a href="./typescript.html">TypeScript</a></h1>
+                <p><a href="./typescript.html">Hello readers and today, we're diving into the world of TypeScript - a powerful superset of JavaScript that can greatly enhance your coding experience. If you're a beginner looking to level up your skills, stay tuned as we walk through the basics of TypeScript and how you can start using Read More...</a></p>
+                    <div class="detail">
+                        <p><i class="fa-solid fa-user"></i>Husban</p>
+                    </div>
+            </div> 
+            <div class="left"><a href="./assets/ts.jpg"></a></div>
+        </div>
+
+        <div class="post">
+            <div class="right">
+                <h1><a href="./API.html">API in JavaScript</a></h1>
+                <p><a href="./API.html">Welcome to the world of web development. In today's article, we'll be exploring the powerful world of working with external APIs in JavaScript. This is a crucial skill for any developer looking to create dynamic and interactive web applicationsRead More...</a></p>
+                    <div class="detail">
+                        <p><i class="fa-solid fa-user"></i>Husban</p>
+                    </div>
+            </div> 
+            <div class="api"><a href="./assets/api.jpg"></a></div>
+        </div>
+    </div>
+
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const humburger = document.querySelector('.humburger');
+        const navButtons = document.querySelector('.buttons');
+    
+        humburger.addEventListener('click', function() {
+            navButtons.classList.toggle('menuShow');
+        });
+    });
+    </script>
+    <script src="./index.js" type="module"></script>
+</body>
+</html>

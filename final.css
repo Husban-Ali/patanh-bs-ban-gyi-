@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ 
+    font-family: 'Gowun Dodum', sans-serif;
+    
+
+}
+:root{
+   
+    --primaryColor:#ffffff;
+    --secondaryColor:#f8efef;
+    --bg-color:#f1f1f1;
+    --btn-color:#428746;
+    --text-color:#707070;
+    --black:#010000;
+}
+html{
+    font-size: 62.5%;
+}
+
+.navbar{
+display: flex;
+align-items: center;
+justify-content: space-between;
+background-color: var(--primaryColor);
+padding: 1rem 6rem;
+position:fixed;
+width: 100%;
+
+}
+.logo a {
+    text-decoration: none;
+    font-size: 2rem;
+    color: var(--btn-color);
+    
+    
+}
+body{
+    background-color: black;
+}
+.logo a h1{
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+}
+h1{
+ color: #428746;   
+}
+.search {
+    width: 45rem;
+    display: flex;
+}
+.search input{
+    width: 100%;
+    padding: 01rem 4rem;
+    border: none;
+    outline: none;
+    border-radius: 0.5rem;
+    background-color: var(--bg-color);
+
+}
+
+.search i{
+    position: relative;
+    left: 2.1rem;
+    top: 0.9rem;
+    font-size: 1.6rem;
+    color: black;
+}
+.buttons {
+    display: flex;
+    gap: 1.6rem;
+}
+.buttons a {
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 600;
+    background-color:var(--btn-color);
+    color: var(--primaryColor);
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+.buttons a:hover{
+    color: var(--black);
+    transition: all 0.4s ease-in-out;
+}
+/* Your existing CSS */
+
+.post {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border: 2px solid #428746;
+    background-color: #f8efef;
+    padding: 10px;
+    margin: 15px;
+    cursor: pointer;
+    color: #428746;
+    position: relative; /* Added */
+  }
+  
+  .post h2 {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+  
+  .post p {
+    font-size: 20px;
+  }
+  
+  .post span {
+    font-size: 15px;
+  }
+  
+  .post {
+    position: relative; /* Add position relative */
+    min-height: 100px; /* Set a minimum height for the post */
+    overflow: hidden; /* Hide overflow content */
+  }
+  
+  .post input {
+    display: none;
+    position: absolute; /* Position input absolutely */
+    bottom: 0;
+    left: 0;
+    width: calc(100% - 20px); /* Adjust width to fit within the post */
+    margin: 0 10px; /* Add margin for better spacing */
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .post:focus-within input {
+    display: block;
+  }
+  
+  

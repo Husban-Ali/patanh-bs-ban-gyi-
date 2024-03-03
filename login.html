@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./login.css">
+    <link rel="icon" type="image/png" href="./assets/OIP (1).jpeg">
+</head>
+<body>
+    
+    <div class="main">
+        <div class="heading">
+           <h1><a href="./index.html"> MY BLOG</a></h1>
+           <h2>LOGIN</h2>
+        </div>
+        <div class="form">
+            <form id="signInForm">
+               <div>
+                   <label for="email">Email address</label>
+                   <div>
+                       <input id="email" type="text" name="email" placeholder="Email" autocomplete="email">
+                       <p class="emailErr">Email is invalid</p>
+                   </div>
+               </div>
+               <div>
+                   <label for="password">Password</label>
+                   <div class="show-password">
+                       <input id="password" type="password" name="password" placeholder="Enter Password">
+                       <i class="fa-solid fa-eye" id="showPass"></i>
+                       <p class="passErr">Password length must be 6 letters</p>
+                   </div>
+                   <div class="forpass"> <a href="/forgetpass.html">Forget password</a></div>
+               </div>
+               <div class="formbtn">
+                   <button type="submit" id="signBtn">Sign in</button>
+               </div>
+               <div class="formbtn">
+                   <button type="submit" id="signBtnGoogle">Sign in with Google</button>
+               </div>
+           </form> 
+   
+           <p class="register-link">Not Register <a href="./signup.html">Register here</a></p>
+        </div>
+    </div>
+   
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const signInForm = document.getElementById("signInForm");
+            signInForm.addEventListener("submit", (e) => {
+                e.preventDefault();
+                // sign-in logic here
+            });
+        });
+    </script>
+    <script src="./login.js" type="module"></script>
+</body>
+</html>

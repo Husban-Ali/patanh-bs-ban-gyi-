@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <link rel="stylesheet" href="./signup.css">
+    <link rel="icon" type="image/png" href="./assets/OIP (1).jpeg">
+</head>
+
+<body>
+    <div class="main">
+        <div class="heading">
+            <a href="./index.html"><h1>My Blogs</h1></a>
+            <h2> sign up to your account </h2>
+        </div>
+        <div class="form">
+            <form action="">
+                <div>
+                    <label for="uname">Username</label>
+                    <div>
+                        <input id="uname" type="text" name="uname" placeholder="Enter Username">
+                    </div>
+                </div>
+                <div>
+                    <label for="email">Email address</label>
+                    <div>
+                        <input id="mail" type="email" name="email" placeholder="Email" autocomplete="email">
+                        <p class="emailErr">Email is invalid</p>
+                    </div>
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <div class="show-password">
+                        <input id="pass" type="password" name="password" placeholder="Enter Password">
+                        <i class="fa-solid fa-eye" id="showPass"></i>
+                        <p class="passErr">Password length must be 6 letters</p>
+                    </div>
+                </div>
+                <div class="formbtn">
+                    <button type="button" id="signup">Sign up</button>
+                </div>
+                
+            </form>
+            <p class="register-link">Already Register <a href="./login.html">Sign in here</a></p>
+        </div>
+    </div>
+    <script src="./signuup.js" type="module"></script>
+</body>
+
+</html>

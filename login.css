@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ 
+    font-family: 'Gowun Dodum', sans-serif;
+    
+
+}
+:root{
+    
+   
+        --primaryColor:#ffffff;
+        --secondaryColor:#eff1f8;
+        --bg-color:#f1f1f1;
+        --btn-color:#428746;
+        --text-color:#707070;
+        --black:#010001;
+    }
+
+html{
+    font-size: 62.5%;
+}
+body{
+    background-color: #010001;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+.main{
+    background-color: var(--bg-color);
+    padding: 3rem;
+    border-radius: 1rem;
+}
+.heading h1{
+ padding: 1rem;
+ text-align: center;
+ font-size: 4rem;
+ color: #428746;
+}
+a{
+    color: #428746;
+    text-decoration: none;
+}
+.heading h2{
+    text-align: center;
+    font-size: 2.5rem;
+    padding-bottom:2.5rem ;
+}
+.form div {
+    width: 50rem;
+}
+.form div label{
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.form .forpass{
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+.show-password{
+    position: relative;
+    /* display: flex; */
+}
+.show-password i{
+    position: absolute;
+    right: 1.5rem;
+    top: 2rem;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+.show-password i:hover{
+    color: #FF0060;
+}
+.form .forpass a{
+    text-decoration: none;
+    color: #428746;
+    
+}
+.form .forpass a:hover{
+    color: black;
+}
+.form div input{
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem 0rem;
+    outline: none;
+    border: none;
+    border-radius: 0.5rem;
+
+}
+.form .formbtn{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.form div button {
+    background-color: var(--primaryColor);
+    color:var(--btn-color);
+    width: 15rem;
+    font-size: 1.6rem;
+    padding: 0.7rem;
+    outline: none;
+    border: none;
+    border-radius: 0.7rem;
+    cursor: pointer;
+    
+}
+.form div button:hover{
+    color:var(--black);
+}
+.form #signBtnGoogle{
+    background-color: var(--btn-color);
+    color:var(--primaryColor);
+    width: 20rem;
+    font-size: 1.6rem;
+    padding: 0.7rem;
+    outline: none;
+    border: none;
+    border-radius: 0.7rem;
+    cursor: pointer;
+}
+.register-link{
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 2rem 0rem;
+} 
+.register-link a{
+    text-decoration: none;
+    color: var(--btn-color);
+}
+.register-link a:hover{
+    color: black;
+}
+.emailErr{
+    color:yellow;
+    margin-bottom:0.7rem ;
+    font-size: 1.3rem;
+    display: none;
+}
+.passErr{
+    color:yellow;
+    margin-bottom:0.7rem ;
+    font-size: 1.3rem;
+    display: none;
+}
+
+
+@media only screen and (max-width:640px){
+    .main{
+        background-color: var(--bg-color);
+        padding: 4rem 2rem;
+        width: 100vw;
+        height: 100vh;
+    }
+    .heading h1 {
+      padding: 1rem 0.4rem;
+      font-size: 3.8rem;
+    }
+    .heading h2{
+        font-size: 2rem;
+    }
+    .form div {
+        width: 100%;
+        padding: 1rem 0rem;
+    } 
+    .show-password i{
+        position: absolute;
+        right: 1.5rem;
+        top: 3rem;
+        font-size: 1.3rem;
+        cursor: pointer;
+    } 
+    
+}
